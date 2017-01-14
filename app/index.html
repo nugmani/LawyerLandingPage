@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Krasnov</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/logo.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon1.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon1-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon1-114x114.png">
+
+	<!-- Bootstrap v3.3.4 Grid Styles -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media (max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media (max-width:767px){.visible-xs-block{display:block !important}}@media (max-width:767px){.visible-xs-inline{display:inline !important}}@media (max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media (min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media (min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media (min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media (min-width:1200px){.visible-lg-block{display:block !important}}@media (min-width:1200px){.visible-lg-inline{display:inline !important}}@media (min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media (max-width:767px){.hidden-xs{display:none !important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}</style>
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style>.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOut{0%{opacity:1}100%{opacity:0}}@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}.owl-height{-webkit-transition:height .5s ease-in-out;transition:height .5s ease-in-out}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-controls .owl-dot,.owl-carousel .owl-controls .owl-nav .owl-next,.owl-carousel .owl-controls .owl-nav .owl-prev{cursor:pointer;cursor:hand;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-loaded{display:block}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel .owl-refresh .owl-item{display:none}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-item img{display:block;width:100%;-webkit-transform-style:preserve-3d;transform-style:preserve-3d}.owl-carousel.owl-text-select-on .owl-item{-webkit-user-select:auto;-moz-user-select:auto;-ms-user-select:auto;user-select:auto}.owl-carousel .owl-grab{cursor:move;cursor:-webkit-grab;cursor:-o-grab;cursor:-ms-grab;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.no-js .owl-carousel{display:block}.hidden,.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-item .owl-lazy{opacity:0;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;background:url(owl.video.play.png) no-repeat;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;-webkit-transition:scale .1s ease;transition:scale .1s ease}.phone-wrap,body{position:relative}.owl-carousel .owl-video-play-icon:hover{-webkit-transition:scale(1.3,1.3);transition:scale(1.3,1.3)}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity .4s ease;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1}body{font-size:16px;min-width:320px;line-height:1.6;font-family:RobotoRegular,sans-serif;overflow-x:hidden}.headers,b,h1,h2,h3,h4,h5,h6,strong{font-family:RalewayBold,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-weight:400}.headers,h1,h2,h3,h4,h5,h6{text-transform:uppercase;color:#1a1c1e}h1,h2,h3,h4,h5,h6{line-height:1.375em}h1{font-size:2.625em}h2{font-size:2.25em}h3{font-size:1.25em}h4{font-size:1.5em}.main-mnu,.phone-wrap .phone{font-family:SourceSanPro,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;font-size:1.125em}.menu-container{background:url(../img/background.png)}.main-mnu ul,.ulmnu{list-style-type:none;margin:0;padding:0}.main-mnu ul li,.ulmnu li{display:inline-block}.logo img{padding:25px 20px}.main-mnu{margin-left:60px;background-image:url(../img/background.png)}.main-mnu li{text-transform:uppercase;line-height:16px;padding-top:55px;padding-left:20px}.main-mnu li a{color:#eae9e9}.main-mnu li a.active,.main-mnu li a:hover{color:#14B8F5;text-decoration:none}.phone-wrap{padding-top:48px;display:block;padding-bottom:10px}.phone-wrap .phone{opacity:.9;color:#14B8F5;text-align:right;white-space:nowrap;padding-right:60px}.header-left h2,.header-left p{font-family:SourceSanProRegular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif}.phone-wrap .toggle-mnu{position:absolute;display:block;float:right;width:28px;height:30px;right:0;top:0;padding-top:52px}.toggle-mnu span:after,.toggle-mnu span:before{content:"";position:absolute;left:0;top:9px}.toggle-mnu span:after{top:18px}.toggle-mnu span{position:relative;display:block}.toggle-mnu span,.toggle-mnu span:after,.toggle-mnu span:before{width:100%;height:4px;background-color:#fff;-webkit-transition:all .3s;transition:all .3s;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-border-radius:2px;border-radius:2px}.toggle-mnu.on span{background-color:transparent}.toggle-mnu.on span:before{-webkit-transform:rotate(45deg) translate(-1px,0);-ms-transform:rotate(45deg) translate(-1px,0);transform:rotate(45deg) translate(-1px,0)}.toggle-mnu.on span:after{-webkit-transform:rotate(-45deg) translate(6px,-7px);-ms-transform:rotate(-45deg) translate(6px,-7px);transform:rotate(-45deg) translate(6px,-7px)}.toggle-mnu.on+#menu{opacity:1;visibility:visible}.header-left{margin:75px auto 120px}.header-left h2{font-size:2.5em;line-height:40px;text-align:center;-webkit-transition:all .5s ease;transition:all .5s ease}.header-left p{font-size:1.125em;line-height:26px;text-align:center}.contact-icons p,.section-consult h3,.wrap-contact-phone p{font-family:SourceSansProRegular,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif}.main-photo{width:350px;margin:30px auto 20px}.section-consult{background-image:url(../img/fotter/background.png)}.section-consult h3{text-align:center;margin:50px auto 60px;color:#fff;font-size:1.875em;line-height:38px}.section-consult h3::after{position:absolute;content:'';height:3px;background-color:#fff;width:165px;display:block;left:50%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);-webkit-border-radius:10em;border-radius:10em;margin-top:20px}.section-consult p{color:#eee;font-size:1em;text-align:center;padding-left:10px;padding-right:10px}.wrap-contact-phone p{color:#14B8F5;font-size:1.625em;text-align:center}.wrap-icons-contact{top:0;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}.contact-icons{margin:0 0 40px;text-align:center}.contact-icons p{color:#ccc;font-size:1.375em}.contact-icons a:hover{opacity:.4;-webkit-transition:all .25s ease;transition:all .25s ease}.contact-icons a.active{opacity:1;-webkit-transition:all .25s ease;transition:all .25s ease}.contact-icons img{margin:0 15px;width:70px}#upbutton img{height:30px;width:30px;bottom:30px;right:12px;cursor:pointer;display:block;position:fixed;z-index:999;border:none}</style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+
+
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet prefetch"  href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+		<link rel="stylesheet" href="libs/Magnific-Popup/magnific-popup.css" >
+		<link rel="stylesheet" href= "libs/animate/animate.css" >
+	</noscript>
+
+</head>
+
+<body>
+
+
+	<header  class="main-head" id="main">
+		<div class="top-line">
+			<div class="menu-container">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+							<a href="http://нугманов.рус" class="logo"><img src="img/logo.png" alt="Nugmanov"></a>
+						</div>
+
+						<div class="col-lg-3 col-md-8 col-sm-8 col-xs-8 col-lg-push-6">
+							<div class="phone-wrap">
+
+								<div class="phone">+7 (347) 276-76-08</div>
+								<div class="phone">+7 (906) 377-03-80</div>
+								<div class="phone">krasnov@mail.ru</div>
+								<a href="#" class="toggle-mnu  hidden-lg"><span></span></a>
+
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-md-12 col-lg-pull-3 ">
+							<nav  class="main-mnu" id="menu">
+								<ul>
+									<!--	<li class="active"><a href="#main">home</a></li>-->
+									<li><a href="#ex1" >Услуги</a></li>
+									<li><a href="#ex2">Этапы работы</a></li>
+									<li><a href="#ex3">Отзывы</a></li>
+									<li><a href="#ex4">Контакты</a></li>
+									<!-- href="javascript:void(0)" onclick="window.scrollTo(0,550); return false"-->
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-wrap" id="#headerwrap">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 col-sm-6 ">
+						<div class="header-left">
+							<!--<h2>Здравствуйте!</h2>-->
+							<p><b>Здравствуйте, меня зовут Краснов Роман. </p></b>
+							<p>Я являюсь дипломированным специалистом в области права, имею ученую степень по юриспруденции.<br>
+							Закончил Башкирский Государственный Университет.</p>
+							<p>По окончании обучения осуществлял трудовую деятельность на разных крупных предприятиях города. Затем работал начальником юридического отдела юридической фирмы.
+В настоящее время занимаюсь адвокатской практикой.  </p>
+						</div>
+					</div>
+
+
+					<div class="col-md-6 col-sm-6 ">
+						<div class="main-photo">
+							<img src="img/photo/main-photo.jpg" alt="My photo">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="section-consult">
+		<div class="consult">
+			<div class="container">
+				<div class="row">
+					<h3>Бесплатная консультация</h3>
+					<div class="wrap-contact-phone">
+						<p>8 906 377 03 80</p>
+					</div>
+
+					<div class="wrap-icons-contact">
+						<div class="contact-icons">
+						<a href="tel:89870521744"  >	<img src="img/icons/8.png" alt="what's app"></a>
+							<a href="whatsapp://send?text=89870521744" class="BtnViber hidden-lg hidden-md">	<img src="img/icons/9.png" alt="viber"></a>
+							<a href="#ex4" class="BtnShow" >	<img src="img/icons/10.png" alt="email"></a>
+						</div>
+
+					</div>
+					<p>Бесплатная юридическая консультация по телефону, WhatsApp, Viber, E-mail</p>
+				<!--	<div class="button-wrap" id="buttonShowHide" >
+						<button class="buttons"   > Написать мне</button>
+					</div>-->
+					<!--<a href="javascript:void(0)" onclick="showHide('writeback')"   href="javascript:void(0)" onclick="window.scrollTo(0,2500)">нажми</a>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class=" section_2" id="ex1">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="section-head col-md-10 col-md-offset-1">
+					<h2>УСЛУГИ</h2>
+			<!--		<p><strong>Сделки cлияния и поглощения</strong> – это процессы укрупнения бизнеса и капитала. Популярность сделки слияния и поглощения приобрели в конце 80-х годов и сейчас они являются одним из основных движущих факторов развития бизнеса на макро и микроуровне. Эффективность сделок слияния и поглощения огромна и не вызывает сомнений. </p>
+			<h3>Наши услуги по <a href="#">сопровождению сделок M&amp;A</a></h3>-->
+		</div>
+
+	</div>
+
+</div>
+
+
+<div class="s_wrap">
+	<div class="s2-items">
+		<div class="container">
+			<div class="s2-items-container">
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/1.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Гражданское право</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/4.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Семейное право</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/3.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Уголовное право</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/18.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Арбитражные споры</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/7.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Жилищное право</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/10.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Военное право</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/13.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Автоюрист</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/2.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Банкротство физлиц</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/6.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Защита прав потребителей</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/17.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Юридическое сопровождение компаний</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/16.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Трудовое право</span>
+					</div>
+				</div>
+
+				<div class="s2-item-wrap">
+					<div class="s2-item">
+						<span class="img-wrap">
+							<img src="img/section2/icons/14.svg" alt="Alt">
+						</span>
+						<span class="s2-item-text">Земельное право </span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--		<div class="section-bottom">
+			<a href="#callback" class="buttons">Заказать сопровождение</a>
+		</div>-->
+
+	</section>
+
+	<section class=" section_3" id="ex2">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="section-head col-md-10 col-md-offset-1">
+					<h2>Этапы работы</h2>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="triangles-container">	
+			<div class="container">
+				<div class="row">
+
+
+					<div class="tc-item">
+						<div class="tc-content">
+							<img src="img/section3/1.svg" alt="">
+							<span>1.</span> Консультация и анализ документов
+						</div>
+						<div class="tc-svg">
+							<svg  viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg1">
+								<path id="path4138" d="M 3.4644996,126.28999 3.1137219,4.0613763 l 240.7182181,0 43.11847,58.7692707 -43.28202,63.461773 z" style="fill:#14B8F5;fill-opacity:1; stroke:#14B8F5; stroke-width:4px" />
+							</svg>
+
+						</div>
+					</div>
+
+
+					<div class="tc-item">
+						<div class="tc-content">
+							<img src="img/section3/2.svg" alt="">
+							<span>2.</span> Заключение договора
+						</div>
+
+						<div class="tc-svg">
+							<svg  viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg2">
+								<path id="path4138-1" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#14B8F5;fill-opacity:1; stroke:#14B8F5; stroke-width:4px" />
+							</svg>
+						</div>
+					</div>
+
+					<div class="tc-item">
+						<div class="tc-content">
+							<img src="img/section3/3.svg" alt="">
+							<span>3.</span> Защита ваших правовых интересов
+						</div>
+
+						<div class="tc-svg">
+							<svg viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg3">
+								<path id="path4138-2" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#14B8F5;fill-opacity:1; stroke:#14B8F5; stroke-width:4px" />
+							</svg>
+						</div>
+					</div>
+
+
+					<div class="tc-item">
+						<div class="tc-content">
+							<img src="img/section3/4.svg" alt="">
+							<span>4.</span> Ваша проблема решена!
+						</div>
+
+
+						<div class="tc-svg">
+							<svg viewBox="0 0 291.01178 129" height="129" width="291.01178" version="1.1" id="tc-svg4">
+								<path id="path4138-3" d="M 3.3821314,126.02828 46.475601,62.999427 3.0313514,3.799673 l 240.7182186,0 43.11847,58.769271 -43.28202,63.461766 z" style="fill:#14B8F5;fill-opacity:1; stroke:#14B8F5; stroke-width:4px" />
+							</svg>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class=" section_4" id="ex3">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="section-head col-md-10 col-md-offset-1">
+					<h2>Отзывы клиентов</h2>
+					<!--<p>Послушайте, что о нас говорят благодарные клиенты:</p>-->
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="section-pb">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="teams">
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/2.jpg" alt="Team"></div>
+							<h4>Екатерина</h4>
+							<!--	<p>Директор компании</p>-->
+							<div class="team-comment"> Мы с мужем жили в гражданском браке, решили расстаться, но возникли обоюдные имущественные претензии. Мне очень трудно было доказывать свои права, так как родственники мужа всеми силами помогали ему отстоять квартиру и все остальное имущество. По совету знакомых я обратилась к вам. Огромное вам спасибо,что помогли мне отстоять свои права!</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/3.jpg" alt="Team"></div>
+							<h4>Павел Андреевич</h4>
+							<!--	<p>Менеджер продаж</p>-->
+							<div class="team-comment"> Хочу сказать спасибо за оказанную мне юридическую помощь! У потребителей действительно есть права! Купил мебель. Уже оплаченную покупку привезли без половины комплектующих. Бился несколько месяцев. То нет на базе, то ждите, и т. д. По совету знакомых обратился к вам за помощью, и все решилось в один день! Огромное вам человеческое спасибо!</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/4.jpg" alt="Time"></div>
+							<h4>Александра</h4>
+							<!--		<p>Старший менеджер</p>-->
+							<div class="team-comment">Добрый день! Хочу выразить Вам огромную благодарность за помощь! Купила телефон, а он оказался серым. Об этом я узнала в сервисном центре, когда отнесла его на ремонт. В магазине отказались вернуть мне деньги, поскольку номер телефона не совпадал с номером на коробке. Юрист помог составить претензию и магазин вернул деньги за один день. Большое вам спасибо!</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/1.jpg" alt="Time"></div>
+							<h4>Марина</h4>
+							<!--		<p>Старший менеджер</p>-->
+							<div class="team-comment">Обратилась со своей проблемой и юрист все четко мне объяснил, как мне поступить. Видно,что человек искренне хочет мне помочь. Уверенна, что следуя рекомендациям, я решу свой вопрос. Удачи и успехов!</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/6.jpg" alt="Time"></div>
+							<h4>Валерия</h4>
+							<!--		<p>Старший менеджер</p>-->
+							<div class="team-comment"> У нас с соседями по даче возник серьезный спор по границе земельных участков. Благодаря вам наш спор разрешен и что немаловажно сохранены хорошие добрососедские отношения! Спасибо большое!</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/7.jpg" alt="Time"></div>
+							<h4>Анна Александровна</h4>
+							<!--		<p>Старший менеджер</p>-->
+							<div class="team-comment">При покупке квартиры уже после завершения сделки выяснились обстоятельства, которые могли нас оставить и без квартиры, и без денег. Мы обратились к вам за юридической помощью. Спасибо огромное! Благодаря вашей квалифицированной консультации все проблемы были решены!</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/8.jpg" alt="Time"></div>
+							<h4>Юрий Михайлович</h4>
+							<!--		<p>Старший менеджер</p>-->
+							<div class="team-comment">Хочу выразить свою благодарность за помощь в решении вопроса о взыскании заработной платы с работодателя. Проконсультировали по всем необходимым вопросам.</div>
+						</div>
+
+						<div class="team ">
+							<div class="card-icon img-wrap"><img src="img/section4/9.jpg" alt="Time"></div>
+							<h4>Алексей</h4>
+							<!--		<p>Старший менеджер</p>-->
+							<div class="team-comment">Недавно попал в ДТП. По ходу разбирательства возник спорный вопрос. Благодаря грамотной консультации все закончилось благополучно. Спасибо вам огромное!</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section class="main-footer" id="ex4">
+		<div class="fotter-wrap">
+			<div class="container">
+				<div class="row">
+					<h5>Подпишись на меня</h5>
+					<div class="wrap-icons">
+						<div class="soc-icons">
+							<a href="https://www.instagram.com/ufa_advokat/"><img src="img/icons/5.png" alt="instagram"></a>	
+							<a href="https://www.facebook.com/groups/279964992405675/"><img src="img/icons/6.png" alt="facebook"></a>	
+							<a href="https://m.vk.com/advokatufa02"><img src="img/icons/7.png" alt="vk"></a>	
+
+						</div>
+					</div>
+
+					<div class="button-wrap" id="buttonShowHide" >
+						<button class="buttons"   > Написать мне</button>
+					</div>
+					<!--<a href="javascript:void(0)" onclick="showHide('writeback')"   href="javascript:void(0)" onclick="window.scrollTo(0,2500)">нажми</a>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<div class="wrap-form" >
+		<div class="container">
+			<div class="row">
+
+				<form class="forms" id="writeback" style="display: none;">
+					<img class="popup-modal-dismiss" src="img/cross.png" alt="">
+					<h1>Задать вопрос</h1>
+
+					<label >
+						<span>Ваше имя (обязательно)</span>
+						<input type="text" name="name" required>
+					</label>
+
+					<label >
+						<span>Ваш Email (обязательно)</span>
+						<input type="text" name="email" required>
+					</label>
+
+					<label >
+						<span>Тема (обязательно)</span>
+						<input type="text" name="subject" required>
+					</label>
+
+					<label >
+						<span>Ваше сообщение</span>
+					<!--	<input type="text" name="text" required>-->
+						<textarea name="text"  cols="30" rows="10"></textarea>
+					</label>
+
+					<div class="button-wrap" id="buttonsend">
+						<button class="buttons">Отправить</button>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="hidden">
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false},
+		{"src" : "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", "async" : false},
+		{"src" : "libs/jasny-bootstrap/js/jasny-bootstrap.min.js", "async" : false},
+		{"src" : "libs/bootstrap/js/bootstrap.min.js", "async" : false},
+		{"src" : "libs/Magnific-Popup/jquery.magnific-popup.min.js", "async" : false},
+		{"src" : "libs/owl/owl.carousel.min.js", "async" : false},
+		{"src" : "libs/animate/animate-css.js", "async" : false},
+		{"src" : "libs/waypoints/waypoints.min.js", "async" : false},
+		{"src" : "libs/drawsvg/drawfillsvg.min.js", "async" : false},
+		{"src" : "js/transition.js", "async" : false},
+		{"src" : "js/button.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+
+	</script>
+
+
+	<script type="text/javascript">
+
+		function showHide(element_id) {
+
+                //Если элемент с id-шником element_id существует
+                if (document.getElementById(element_id)) { 
+                    //Записываем ссылку на элемент в переменную obj
+                    var obj = document.getElementById(element_id); 
+                    //var btn = document.btn;
+                    //Если css-свойство display не block, то: 
+                    if (obj.style.display != "block") { 
+                        obj.style.display = "block"; //Показываем элемент
+                      }
+                      else {
+                    	//onclick="showHide('writeback')"
+                    	obj.style.display = "none"; //Скрываем элемент
+                    }
+
+
+
+                  }
+                //Если элемент с id-шником element_id не найден, то выводим сообщение
+                else alert("Элемент с id: " + element_id + " не найден!"); 
+              } 
+
+
+            </script>
+
+<!--<script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="/js/button.js";h.appendChild(s);}</script>-->
+
+<script>
+	window.onload = function () {
+		var smoothJumpUp = function() {
+			if (document.body.scrollTop>0 || document.documentElement.scrollTop>0) {
+				window.scrollBy(0,-50);
+				setTimeout(smoothJumpUp, 20);
+			}
+		}
+	}
+</script>
+
+            <!-- Load Scripts End -->
+<a id="upbutton" href="" onclick="smoothJumpUp(); return false;">
+    <img src="img/icons/arrow-up.png" alt="Top" >
+</a>
+          </body>
+          </html>

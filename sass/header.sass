@@ -1,0 +1,241 @@
+@import "bourbon"
+@import "vars.sass"
+@import "../app/libs/owl/assets/owl.carousel.sass"
+
+//$headers-color: #1a1c1e
+$main-color:  #14B8F5
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+
+.headers
+	font-family: "RalewayBold", $helvetica
+	text-transform: uppercase
+	font-weight: normal
+	color: #1a1c1e
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+	line-height: em(22px)
+
+h1
+	font-size: em(42px)
+
+h2
+	font-size: em(20px)
+
+h3
+	font-size: em(20px)
+
+h4
+	font-size: em(24px)
+
+b, strong
+	font-family: "RalewayBold", $helvetica
+	font-weight: normal
+
+.menu-container
+	//background-color: #282828
+	background: url(../img/background.png)
+
+.ulmnu
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		display: inline-block
+
+.logo
+	img
+		padding: 25px 20px
+		
+
+.main-mnu
+	font-size: em(18px)
+	font-family: "SourceSanPro", $helvetica
+	margin-left: 60px
+	background-image: url(../img/background.png)
+
+	li
+		text-transform: uppercase
+		line-height: 16px
+		//padding: 50px 0px 0 50px
+		padding-top: 55px
+		padding-left: 20px
+		a
+			color: #eae9e9
+			&.active 
+				color: $main-color
+				text-decoration: none
+			&:hover
+				color: $main-color
+				text-decoration: none
+	ul
+		@extend .ulmnu
+
+.phone-wrap
+	position: relative
+	padding-top: 48px
+	display: block
+	padding-bottom: 10px
+	.phone
+		opacity: 0.9
+		color: $main-color
+		font-family: "SourceSanPro", $helvetica
+		font-size: em(18px)
+		text-align: right
+		white-space: nowrap
+		padding-right: 60px
+	.toggle-mnu
+		position: absolute
+		display: block
+		float: right
+		width: 28px
+		height: 30px
+		right: 0
+		top: 0
+		padding-top: 52px
+
+
+
+.toggle-mnu span:after,
+.toggle-mnu span:before 
+	content: ""
+	position: absolute
+	left: 0
+	top: 9px
+
+.toggle-mnu span:after
+	top: 18px
+
+.toggle-mnu span 
+	position: relative
+	display: block
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before
+	width: 100%
+	height: 4px
+	background-color: #fff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+.toggle-mnu.on span 
+	background-color: transparent
+
+.toggle-mnu.on span:before 
+	transform: rotate(45deg) translate(-1px, 0px)
+
+.toggle-mnu.on span:after 
+	transform: rotate(-45deg) translate(6px, -7px)
+
+.toggle-mnu.on + #menu 
+	opacity: 1
+	visibility: visible
+/*----------------------section head ------------*/
+.header-left
+	margin: 75px auto 120px 
+
+	h2
+		font-size: em(40px)
+		line-height: 40px
+		text-align: center
+		font-family: "SourceSanProRegular", $helvetica
+		transition: all 0.5s ease
+	p
+		font-size: em(18px)
+		line-height: 26px
+		font-family: "SourceSanProRegular", $helvetica
+		text-align: center
+
+
+.main-photo
+	max-width: 350px
+	margin: 30px 0 20px
+
+/*-----------------------section-consult-------------*/
+.section-consult
+	background-image: url(../img/background.png)
+	h3
+		text-align: center
+		margin: 50px auto 60px
+		color: #fff
+		font-size: em(30px)
+		font-family: "SourceSansProRegular", $helvetica	
+		line-height: 38px
+		&::after
+			position: absolute
+			content: ''
+			height: 3px
+			background-color: #fff
+			width: 165px
+			display: block
+			//bottom: -30px
+			left: 50%
+			transform: translate(-50%, 0)
+			border-radius: 10em	
+			margin-top: 20px	
+	p
+		color: #eeeeee
+		font-size: em(16px)
+		text-align: center
+		padding-left: 10px
+		padding-right: 10px
+.wrap-contact-phone
+	p
+		color: $main-color
+		font-size: em(26px)
+		font-family: "SourceSansProRegular", $helvetica	
+		text-align: center
+
+	
+.wrap-icons-contact		
+	top: 0
+	left: 0
+	display: flex
+	align-items: center
+	justify-content: center 
+
+
+.contact-icons
+	margin: 0 0 40px
+	text-align: center
+	//display: inline-block
+	p
+		color: #cccccc
+		font-size: em(22px)
+		font-family: "SourceSansProRegular", $helvetica	
+	a
+		&:hover
+			opacity: 0.4
+			transition: all .25s ease
+		&.active
+			opacity: 1
+			transition: all .25s ease
+	img
+		margin: 0 15px 0 
+		width: 70px
+
+/*------------------*/
+#upbutton 
+	img
+		height: 30px
+		width: 30px
+		bottom: 30px
+		right: 12px
+		cursor: pointer
+		display: block
+		position: fixed
+		z-index: 999
+		border: none

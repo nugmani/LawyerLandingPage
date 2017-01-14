@@ -1,0 +1,383 @@
+@import "bourbon"
+@import "_vars.sass"
+@import "../app/libs/owl/assets/owl.carousel.sass"
+
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+
+//ALWAYS END
+
+
+
+/*----------------------------------section-2------------------------*/
+.section_2
+	//background-image: url(img/fotter/background.png)
+	background: #eeeeee
+	.section-head
+		margin-bottom: 60px
+		h2
+			text-align: center
+			position: relative
+			font-family: "SourceSanPro", $helvetica
+			color: #282828
+			&::after
+				position: absolute
+				content: ''
+				height: 3px
+				background-color: $main-color
+				width: 165px
+				display: block
+				left: 50%
+				transform: translate(-50%, 0)
+				border-radius: 10em
+
+
+.s2-items-container
+	text-align: center
+
+.s2-item-wrap
+	display: inline-block
+	float: none
+	padding: 0 15px
+	width: 185px
+	vertical-align: top
+	transition: all .5s ease
+	transform: translateY(-25px)
+	&.on
+		opacity: 1
+		transform: translateY(0)
+	&:hover
+		transform: translateY(-10px)
+
+.s2-items
+	//padding-bottom: 20px
+	.s2-item
+		text-align: center
+		color: #282828
+		margin-bottom: 75px
+		display: block
+		transition: all 0.5s ease
+
+		&:hover
+			color: $main-color
+		> span
+			display: block
+		&-text
+			font-family: "RalewayBold", $helvetica
+			font-size: em(16px)
+			line-height: em(20px)
+			font-weight: bold
+
+	.img-wrap
+		padding-bottom: 32px
+		margin-bottom: 12px
+		display: block
+		position: relative
+		line-height: 60px
+		&::before
+			content: ''
+			position: absolute
+			height: 2px
+			background-color: $main-color
+			width: 100px
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, 0)
+		img
+			max-width: 75px
+			max-height: 60px
+			width: auto
+
+
+.img-wrap
+	img
+		width: 100%
+		max-width: 100%
+
+
+
+
+
+/*--------------------------------section-3---------------------------*/
+.section_3
+	//background-color: #282828
+	.section-head
+		h2
+			color: #282828
+			text-align: center
+			position: relative
+			font-family: "SourceSanPro", $helvetica
+		&::after
+				position: absolute
+				content: ''
+				height: 3px
+				background-color: $main-color
+				width: 165px
+				display: block
+				//bottom: -30px
+				left: 50%
+				transform: translate(-50%, 0)
+				border-radius: 10em
+.triangles-container
+	color: #282828
+	font-size: em(18px)
+	line-height: 26px
+	font-family: "RalewayBold", $helvetica
+	margin: 60px 0 70px
+	text-align: center
+	.tc-item
+		width: 290px
+		height: 128px
+		display: inline-block
+		position: relative
+		margin-left: -40px
+		margin-bottom: 10px
+		vertical-align: top
+		transition: all 0.5s ease
+		&:first-child
+			//margin-left: 0
+			.tc-content
+				margin-left: 55px
+		svg
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 0
+		.tc-content
+			position: relative
+			z-index: 1
+			margin-top: 30px
+			margin-left: 55px
+			text-align: left
+			padding-right: 30px
+			//line-height: 20px
+			span
+
+				font-size: em(16px)
+			img
+				height: 55px
+				float: left
+				margin-right: 15px
+/*--------------------------------section-4---------------------------*/
+.section_4
+	background-color: #eeeeee
+	.section-head
+		margin-bottom: 20px
+		text-align: center
+		color: #282828
+
+.teams
+	text-align: center
+	.team
+		max-width: 350px
+		height: 560px
+		display: inline-block
+		background: #fff
+		-webkit-box-shadow: inset 0px 0px 25px 0px rgba(50, 50, 50, 0.75)
+		-moz-box-shadow: inset 0px 0px 25px 0px rgba(50, 50, 50, 0.75)
+		box-shadow: inset 0px 0px 25px 0px rgba(50, 50, 50, 0.75)
+		transition: all 1.2s ease
+		display: inline-block
+		margin: 0 20px 30px
+		color: #97a4b2
+		font-size: em(15px)
+		line-height: em(21px)
+		padding: 54px 28px 48px
+		vertical-align: top
+		border-bottom: $main-color 4px solid
+
+		.card-icon
+			line-height: 0
+			background-color: #fff
+			display: inline-block
+			overflow: hidden
+			img
+				width: 120px
+				height: 120px
+				border: 5px solid #ddd  
+				border-radius: 100px
+				box-shadow: 0 0 5px #d6d6d6
+			h4
+				color: #282828
+				font-family: "RalewayBold", $helvetica
+				margin-top: 30px
+				margin-bottom: 18px
+			p
+				margin-bottom: 0
+				margin-top: 0
+				height: auto
+				strong
+					color: $main-color
+
+
+.owl-controls
+		text-align: center
+		.owl-nav
+			position: absolute
+			top: 40%
+			width: 100%
+			> div
+				height: 29px
+				width: 16px
+				background-image: url(../img/slider_arrows.png)
+				position: absolute
+				opacity: .5
+				transition: all .25s ease
+				//margin-left: 5px
+				//margin-right: 5px
+				&:hover
+					opacity: 1
+			.owl-next
+				right: 0
+				left: auto
+				background-position: -16px 0
+				//margin-left: 5px
+				//margin-right: 5px
+
+
+///*-----------------------------------fotter---------------------------*/
+
+.fotter-wrap
+	background-image: url(../img/background.png)
+	h5
+		text-align: center
+		margin: 80px auto 60px
+		color: #cccccc
+		font-size: em(24px)
+		font-family: "SourceSansProRegular", $helvetica	
+		line-height: 26px
+	
+.wrap-icons	
+	text-align: center	
+	top: 0
+	left: 0
+	display: flex
+	align-items: center
+	justify-content: center 
+
+
+.soc-icons
+	margin: 0 0 65px
+	text-align: center
+	a
+		&:hover
+			opacity: 0.4
+			transition: all .25s ease
+		&.active
+			opacity: 1
+			transition: all .25s ease
+	img
+		margin: 0 50px 0 
+		
+
+/*-----------------------------------email---------------------------*/
+
+
+.button-wrap
+	text-align: center
+	margin: 30px auto
+
+.buttons
+	display: inline-block
+	border: none
+	background-color: $main-color
+	color: #fff
+	font-family: "SourceSanProRegular", $helvetica
+	font-size: em(22px)
+	width: 160px
+	height: 40px
+	//padding: 5px 40px
+	//border-bottom: #B97200 3px solid
+	transition: all .25s ease
+	text-decoration: none
+	border-radius: 4px
+	&:hover
+		background-color: #fff
+		color: $main-color
+	&:active
+		background-color: #2386a4
+		color: #111
+	&:focus
+		color: #111
+
+.wrap-form
+	background-color: #fff
+	color: #1a1c1e
+
+.forms
+	max-width: 500px
+	margin: 0 30% 0
+	h1
+		text-align: center
+		font-family: "LatoRegular", $helvetica
+		text-transform: uppercase
+		text-decoration: none
+	label
+		display: block
+		span
+			position: relative
+			display: block
+			font-size: em(16px)
+			font-family: "SourceSanProRegular", $helvetica
+			line-height: 16px
+			vertical-align: baseline
+			color: #1a1c1e
+			letter-spacing: 2px
+			padding-bottom: 5px
+			margin: 10px auto 3px
+		input
+			background-color: #b4d2d2
+			text-decoration: none 
+			margin: 0px auto 10px
+			//max-width: 500px
+			width: 100%
+			height: 40px
+			outline: none
+			border: none
+			&.focus
+				outline: none
+		textarea
+			width: 100%
+			height: 300px
+			outline: none
+			border: none
+			background-color: #b4d2d2
+			text-decoration: none 
+			color: #666
+	img
+		cursor: pointer
+		display: block
+		width: 20px
+		height: 20px
+		margin: 20px 90% 0
+
+
+
+
+//ALWAYS END
+@import "_media.sass"

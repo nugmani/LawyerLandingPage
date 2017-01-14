@@ -1,0 +1,237 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-mnu
+		display: none
+		min-width: 290px
+		float: right
+		text-align: right
+		background-color: #282828
+		padding-right: 50px
+		//position: absolute//для изменения вмда меню
+		//right: 15px//для изменения вмда меню
+		//z-index: 2//для изменения вмда меню
+		ul
+			li
+				display: block
+				line-height: 0
+				padding: 10px 10px 
+			a
+				display: block
+				line-height: 16px
+
+
+	//.toggle-mnu
+		//padding-top: 53px
+
+	.assist-wrap
+		width: 60%
+	/*.wrap-project
+		margin: 10px auto*/
+	.forms
+		max-width: 500px
+		margin: 0 25% 0
+
+	.phone-wrap
+		margin-right: 60px
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.phone-wrap
+		margin-right: 0px
+	.main-mnu
+		padding-right: 0px
+		ul
+			margin: 20px 0
+			
+	.wrap-project
+		width: 80%
+
+	.assist-wrap
+		width: 70%
+
+	.pay-wrap
+		margin: 30px 25%
+
+	.forms
+		max-width: 400px
+		margin: 0 25% 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header-left
+		margin: 30px auto 10px 
+
+	.wrap-project
+		width: 95%
+		margin: 30px auto
+		h1
+			font-size: em(36px)
+	
+	.assist-wrap
+		width: 80%
+		h4
+			font-size: em(26px)
+			padding: 30px 30px 0
+
+	.soc-icons
+		img
+			margin: 0 30px 0 
+
+	.pay-wrap
+		margin: 30px 20%
+
+	.forms
+		max-width: 500px
+		margin: 0 20% 0
+
+	.phone-wrap
+		.phone
+			padding-right: 45px
+	.logo
+		img
+			padding: 25px 0 25px 0
+
+
+	.owl-controls
+		.owl-nav
+			> div
+				margin-left: 45px
+			.owl-next
+				margin-right: 45px
+
+
+	.forms
+		h1
+			font-size: em(36px)
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+	.section_3
+		.triangles-container
+			.tc-item
+				margin-left: 0
+
+	.logo
+		img
+			padding-left: 0
+			width: 250px
+	//.toggle-mnu
+		//width: 24px
+		//padding-top: 50px
+	//.main-mnu
+		//top: 100px
+	.main-photo
+		img
+			width: 290px
+
+	.items-wrap 
+		.info-item
+			margin: 20px 10px 0 
+
+	.assist-wrap
+		width: 80%
+		h4
+			font-size: em(26px)
+			padding: 20px 10px 0
+
+	.soc-icons
+		img
+			margin: 0 10px 0 
+
+	.pay-wrap
+		margin: 30px 5%
+	.pay-item
+		a
+			padding-left: 10px
+
+	.forms
+		max-width: 500px
+		margin: 0 10% 0
+		h1
+			font-size: em(36px)
+
+	.phone-wrap
+		padding-top: 90px
+		.phone
+			padding-right: 0 
+
+	.owl-controls
+		.owl-nav
+			> div
+				margin-left: 3px
+			.owl-next
+				margin-right: 3px
+
+.s2-item-wrap
+	padding: 0 10px
+	width: 140px
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.main-mnu
+		display: inline-block !important
+	a
+		outline: none
+
+
+
