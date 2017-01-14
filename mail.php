@@ -5,14 +5,15 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 
 $recepient = "livesmitty@gmail.com";
-$sitname = "Название сайта";
+$sitname = "нугманов.ру";
 
 $name = trim($_POST["name"]);
-$phone = trim($_POST["phone"]);
-$email = trim($_POST["e-mail"])
-$message = "Имя: $name \n Телефон: $phone \n E-mail: $email";
+$text = trim($_POST["text"]);
+$email = trim($_POST["email"]);
+$subject = trim($_POST["subject"]);
+$message = " Имя: $name \n Телефон: $subject \n E-mail: $email\n Сообщение: $text";
 
-$pagetitle = "Новая заявка с сайта \"$sitename\"";
+$pagetitle = "Новое письмо с сайта \"$sitename\"";
 mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 
 
